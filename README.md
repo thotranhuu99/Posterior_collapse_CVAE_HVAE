@@ -3,8 +3,8 @@
 ## Experiments
 ***CVAEs experiments***\
 **Varying $\beta, \eta_{dec}$ experiment**\
-*Varying $\beta$ args*: --eta_enc 1.0 --eta_dec 1.0 --beta $\in$ [0.1, 0.5, 1.0, 2.0]\
-*Varying $\eta_{dec}$ args*: --eta_enc 1.0 --beta 1.0 --eta_dec $\in$ [0.25, 0.5, 1.0, 2.0]
+*Varying $`\beta`$ args*: --eta_enc 1.0 --eta_dec 1.0 --beta $\in$ [0.1, 0.5, 1.0, 2.0]\
+*Varying $`\eta_{dec}`$ args*: --eta_enc 1.0 --beta 1.0 --eta_dec $\in$ [0.25, 0.5, 1.0, 2.0]
 ```
 CUDA_VISIBLE_DEVICES=0 python MNIST_CVAE_Relu.py
 ```
@@ -17,9 +17,9 @@ CUDA_VISIBLE_DEVICES=0 python MNIST_CVAE_CNN_single_digit.py
 ```
 ***HVAEs experiments***\
 **Varying $\beta_1, \beta_2, \eta_{dec}$ experiment**\
-*Varying $\beta_1$ args*: --eta_enc 0.5 --eta_dec 0.5 --beta_2 1.0 --beta_1 $\in$ [0.1, 0.5, 1.0, 2.0]\
-*Varying $\beta_2$ args*: --eta_enc 0.5 --eta_dec 0.5 --beta_1 1.0 --beta_2 $\in$ [0.1, 0.5, 1.0, 2.0]\
-*Varying $\eta_{dec}$ args*: --eta_dec 0.5 --beta_1 1.0 --beta_2 1.0 --eta_enc $\in$ [0.25, 0.5, 1.0, 2.0]
+*Varying $`\beta_1`$ args*: --eta_enc 0.5 --eta_dec 0.5 --beta_2 1.0 --beta_1 $\in$ [0.1, 0.5, 1.0, 2.0]\
+*Varying $`\beta_2`$ args*: --eta_enc 0.5 --eta_dec 0.5 --beta_1 1.0 --beta_2 $\in$ [0.1, 0.5, 1.0, 2.0]\
+*Varying $`\eta_{dec}`$ args*: --eta_dec 0.5 --beta_1 1.0 --beta_2 1.0 --eta_enc $\in$ [0.25, 0.5, 1.0, 2.0]
 ```
 CUDA_VISIBLE_DEVICES=0 python MNIST_HVAE_Relu.py
 ```
@@ -54,8 +54,8 @@ CUDA_VISIBLE_DEVICES=0 python matrix_CVAE.py
 CUDA_VISIBLE_DEVICES=0 python MNIST_CVAE_Linear.py --beta 1.0
 ```
 **Log-likelihood, KL and AU of CVAEs with varied $\beta, \eta_{dec}$**\
-*Varying $\beta$ args*: --eta_enc 1.0 --eta_dec 1.0 --beta $\in$ [0.1, 0.5, 1.0, 2.0]\
-*Varying $\eta_{dec}$ args*: --eta_enc 1.0 --beta 1.0 --eta_dec $\in$ [0.25, 0.5, 1.0, 2.0]
+*Varying $`\beta`$ args*: --eta_enc 1.0 --eta_dec 1.0 --beta $\in$ [0.1, 0.5, 1.0, 2.0]\
+*Varying $`\eta_{dec}`$ args*: --eta_enc 1.0 --beta 1.0 --eta_dec $\in$ [0.25, 0.5, 1.0, 2.0]
 ```
 CUDA_VISIBLE_DEVICES=0 python MNIST_CVAE_Relu.py
 ```
@@ -86,9 +86,9 @@ CUDA_VISIBLE_DEVICES=0 python matrix_HVAE_nonlearnable_sigma_2.py
 CUDA_VISIBLE_DEVICES=0 python MNIST_HVAE_Linear_nonlearnable_sigma_2.py
 ```
 **Log-likelihood, KL and AU of HVAEs with varied $\beta, \eta_{dec}$**\
-*Varying $\beta_1$ args*: --eta_enc 0.5 --eta_dec 0.5 --beta_2 1.0 --beta_1 $\in$ [0.25, 0.5, 1.0, 2.0, 3.0]\
-*Varying $\beta_2$ args*: --eta_enc 0.5 --eta_dec 0.5 --beta_1 1.0 --beta_2 $\in$ [0.25, 0.5, 1.0, 2.0, 3.0]\
-*Varying $\eta_{dec}$ args*: --eta_dec 0.5 --beta_1 1.0 --beta_2 1.0 --eta_enc $\in$ [0.25, 0.5, 0.70, 1.0, 2.0]
+*Varying $`\beta_1`$ args*: --eta_enc 0.5 --eta_dec 0.5 --beta_2 1.0 --beta_1 $\in$ [0.25, 0.5, 1.0, 2.0, 3.0]\
+*Varying $`\beta_2`$ args*: --eta_enc 0.5 --eta_dec 0.5 --beta_1 1.0 --beta_2 $\in$ [0.25, 0.5, 1.0, 2.0, 3.0]\
+*Varying $`\eta_{dec}`$ args*: --eta_dec 0.5 --beta_1 1.0 --beta_2 1.0 --eta_enc $\in$ [0.25, 0.5, 0.70, 1.0, 2.0]
 ```
 CUDA_VISIBLE_DEVICES=0 python MNIST_HVAE_Relu.py
 ```
