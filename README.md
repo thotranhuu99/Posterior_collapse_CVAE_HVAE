@@ -1,4 +1,8 @@
-# Beyond Vanilla Variational Autoencoders: Detecting Posterior Collapse in Conditional and Hierarchical Variational Autoencoders
+# Posterior Collapse in Linear Conditional and Hierarchical Variational Autoencoders
+
+This is the code for the [paper](https://arxiv.org/abs/2306.05023) "Posterior Collapse in Linear Conditional and Hierarchical Variational Autoencoders".
+
+Conference on Neural Information Processing Systems (NeurIPS), 2023
 
 ## Experiments
 ***CVAEs experiments***\
@@ -91,4 +95,14 @@ CUDA_VISIBLE_DEVICES=0 python MNIST_HVAE_Linear_nonlearnable_sigma_2.py
 *Varying $`\eta_{dec}`$ args*: --eta_dec 0.5 --beta_1 1.0 --beta_2 1.0 --eta_enc $\in$ [0.25, 0.5, 0.70, 1.0, 2.0]
 ```
 CUDA_VISIBLE_DEVICES=0 python MNIST_HVAE_Relu.py
+```
+## Citation and reference 
+For technical details and full experimental results, please check [our paper](https://arxiv.org/abs/2306.05023).
+```
+@article{dang2024vanilla,
+  title={Beyond Vanilla Variational Autoencoders: Detecting Posterior Collapse in Conditional and Hierarchical Variational Autoencoders},
+  author={Hien Dang and Tho Tran and Tan Nguyen and Nhat Ho},
+  journal={arXiv preprint arXiv:2306.05023},
+  year={2023}
+}
 ```
